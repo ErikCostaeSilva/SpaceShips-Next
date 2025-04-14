@@ -6,7 +6,7 @@ export default function Page() {
     <h1 className="mainTitle">Todas as Espaçonaves</h1>
     <div className="cardsContainer">
     {listSpaceshipsJson.map((nav)=>(
-        <Link href={`/list/spacecraft/${nav.id}`}>
+        <Link key={nav.id} href={`/list/spacecraft/${nav.id}`}>
         <div className="cardContent">
           {nav.name}
         </div>

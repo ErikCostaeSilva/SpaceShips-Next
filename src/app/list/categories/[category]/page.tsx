@@ -16,7 +16,7 @@ export default function Page(){
       <h1 className="mainTitle">{category}</h1>
       <div className="cardsContainer">
       {spaceShipsByCategory.map((space)=>(
-        <Link href={`/list/spacecraft/${space.id}`}>
+        <Link key={space.id} href={`/list/spacecraft/${space.id}`}>
           <div className="cardContent">
             {space.name}
           </div>

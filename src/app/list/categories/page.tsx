@@ -13,7 +13,7 @@ export default function Page() {
     <h1 className="mainTitle">Categorias</h1>
     <div className="cardsContainer">
     {categoriesList.map((category)=>(
-        <Link href={`/list/categories/${category.replace(" ","_")}`}>
+        <Link key={category} href={`/list/categories/${category.replace(" ","_")}`}>
         <div className="cardContent" key={category}>
           {category}
         </div>
