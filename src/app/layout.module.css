@@ -1,0 +1,18 @@
+.headerSpace {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10vw;
+  padding: 1em 0;
+}
+.logo {
+  font-size: 1em;
+}
+.navigate {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+.mainLink {
+  font-size: 0.85em;
+}
